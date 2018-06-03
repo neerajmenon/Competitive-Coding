@@ -60,10 +60,10 @@ public class River {
             visited[i] = false;
 
         int i =1;
-        //for(int i=1;i<=V;i++){
+      
         if(!visited[i])
             topologicalSortUtil(i,visited,stack);
-        //}
+       
         updateDistances(stack);
     }
 
@@ -107,8 +107,7 @@ public class River {
                 continue;
             g.addEdge(Integer.parseInt(input[0]),Integer.parseInt(input[1]),
                     Integer.parseInt(input[2]));
-           // g.addEdge(Integer.parseInt(input[1]),Integer.parseInt(input[0]),
-           //         Integer.parseInt(input[2]));
+       
         }
 
 
